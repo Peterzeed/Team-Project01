@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Term Project OS😫</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <main class="container">
+        <h4 style="color: #ac1900" ;>6221608155 ศุภกร พรหมพินิจ</h4>
+        <div class="processcheduler"> </div>
+        <script defer src="script.js"></script>   
+    </main>
+</body>
+<div>
+    <input type="number" id = "numProcess" value="">        จำนวน Process</input>
+</div>
+
+    <div>
+        <form id="algorithm"> 
+            <input type="radio" name="algorithm" value="fcfs" /> FCFS<br/>
+            <input type="radio" name="algorithm" value="sjf" /> SJF<br/>
+            <input type="radio" name="algorithm" value="priority"  /> Priority scheduling<br/>
+            <input type="radio" name="algorithm" value="robin"  /> Round Robin <br/>
+        </form>
+    </div>
+    <div>
+    <table id="myTable">
+        <tr>
+            <th>Process</th> 
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+            <th>Service Time</th>
+            <th>Priority</th>
+            <th>Time Quantum</th>
+            <br />
+        </tr>
+    </table>  
+    </div>
+<button class="button" type="button" onclick="addTable()">เพิ่มตาราง</button>&emsp;
+  <button class="button" type="button" onclick="delTable()">ลบตาราง</button>&emsp;
+  <button class="button" type="button" onclick="calculator()">คํานวนค่า</button>
+</body>
+<h4 id="calculation"></h4>
+</html>
